@@ -1,17 +1,22 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { Button } from '../components/ui/button'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card'
+import ProjectCard from './ProjectCard'
+
+interface Project {
+    title: string
+    description: string
+    imageUrl: string
+    projectUrl: string
+}
 
 type ProjectsProps = {
     t: {
     title: string
-    items: Array<{ title: string; description: string }>
     viewProject: string
     }
+    projects: Project[]
 }
 
-export default function Projects({ t }: ProjectsProps) {
+export default function Projects({ t, projects }: ProjectsProps) {
     return (
     <motion.section
         initial={{ opacity: 0 }}
@@ -19,29 +24,19 @@ export default function Projects({ t }: ProjectsProps) {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="py-16"
     >
-        <h2 className="text-3xl font-bold mb-8 text-center">{t.title}</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">{t.title}</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {t.items.map((project, index) => (
-            <Card key={index} className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
-            <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-            </CardHeader>
-            <CardContent>
-                <Image
-                src={`/forchange?height=200&width=400&text=${project.title}`}
-                alt={project.title}
-                width={400}
-                height={200}
-                className="rounded-lg"
-                />
-            </CardContent>
-            <CardFooter>
-                <Button variant="outline">{t.viewProject}</Button>
-            </CardFooter>
-            </Card>
+        {projects.map((project, index) => (
+            <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+            projectUrl={project.projectUrl}
+            viewProjectText={t.viewProject}
+            />
         ))}
         </div>
     </motion.section>
-)
+    )
 }

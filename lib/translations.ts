@@ -6,7 +6,7 @@ export const translations = {
         },
         about: {
         title: "About Me",
-        description: "Hi, my name is Angel, and I’m a web | mobile developer passionate about creating innovative and functional solutions. I have experience with both front-end and back-end technologies, allowing me to build robust, scalable, and user-focused web and mobile applications. I enjoy tackling new challenges and collaborating on projects that drive digital growth. I’m always eager to learn and refine my skills, combining creativity and efficiency to deliver high-impact results.",
+        description: "Hi, my name is Angel, and I'm a web | mobile developer passionate about creating innovative and functional solutions. I have experience with both front-end and back-end technologies, allowing me to build robust, scalable, and user-focused web and mobile applications. I enjoy tackling new challenges and collaborating on projects that drive digital growth. I'm always eager to learn and refine my skills, combining creativity and efficiency to deliver high-impact results.",
         },
         skills: {
         title: "My Skills",
@@ -40,7 +40,7 @@ export const translations = {
         },
         skills: {
         title: "Mis Habilidades",
-        items: ["JavaScript", "React", "Node.js", "Python", "SQL", "Git", "AWS", "Docker"],
+        items: ["JavaScript", "TypeScript", "Dart", "Flutter", "React", "Next.js", "Node.js", "Python", "Django", "Git", "Laravel", "PHP"],
         description: "Como desarrollador web dedicado, me apasiona estar a la vanguardia de los avances tecnológicos. Busco constantemente nuevas oportunidades para aprender y crecer, ya sea a través de cursos en línea, talleres o proyectos prácticos. Al mantener mis habilidades actualizadas con las últimas tendencias en desarrollo web, puedo ofrecer soluciones innovadoras y efectivas para mis clientes.",
         },
         projects: {
@@ -50,7 +50,7 @@ export const translations = {
             { title: "Blog Personal", description: "Un blog construido con Next.js y MDX" },
             { title: "Dashboard de Análisis", description: "Panel de control de datos en tiempo real" },
         ],
-        viewProject:  "Ver Proyecto",
+        viewProject: "Ver Proyecto",
         },
         contact: {
         title: "Contáctame",
