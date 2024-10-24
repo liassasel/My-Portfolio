@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import ProjectCard from './ProjectCard'
-import { Project, projectsData } from '../lib/translations'
+import { projectsData } from '../lib/translations'
 
 type ProjectsProps = {
     t: {
