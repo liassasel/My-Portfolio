@@ -33,11 +33,11 @@ export const translations = {
     },
     about: {
         title: "About Me",
-        description: "Hi, my name is Angel, and I'm a web | mobile developer passionate about creating innovative and functional solutions. I have experience with both front-end and back-end technologies, allowing me to build robust, scalable, and user-focused web and mobile applications. I enjoy tackling new challenges and collaborating on projects that drive digital growth. I'm always eager to learn and refine my skills, combining creativity and efficiency to deliver high-impact results.",
+        description: "Hello, my name is Angel. I'm a full stack developer who specializes in building complete web solutions. My main focus is the Node stack, which I use to handle both the frontend and the backend. I work with frameworks like NestJS and Django, and I also use Laravel when projects require it. A key component of my work is using Docker for container management, and I have knowledge in implementing microservices, working with technologies like RabbitMQ and Grafana to ensure application efficiency and scalability.",
     },
     skills: {
         title: "My Skills",
-        items: ["JavaScript", "TypeScript", "Dart", "Flutter", "React", "Next.js", "Node.js", "Python", "Django", "Git", "Laravel", "PHP"],
+        items: ["JavaScript", "TypeScript", "Docker", "NestJS", "React", "Next.js", "Node.js", "Python", "Django", "Git", "Laravel", "PHP"],
         description: "As a dedicated web developer, I'm passionate about staying at the forefront of technological advancements. I'm constantly seeking out new opportunities to learn and grow, whether it's through online courses, workshops, or hands-on projects. By keeping my skills sharp and up-to-date with the latest trends in web development, I'm able to deliver innovative and effective solutions for my clients.",
     },
     projects: {
@@ -63,7 +63,7 @@ export const translations = {
     },
     about: {
         title: "Sobre Mí",
-        description: "Hola, me llamo Angel y soy un desarrollador web | mobile apasionado por crear soluciones innovadoras y funcionales. Tengo experiencia en tecnologías tanto de front-end como de back-end, lo que me permite construir aplicaciones web y móviles robustas, escalables y centradas en la experiencia del usuario. Me encanta enfrentar nuevos retos y colaborar en proyectos que impulsen el crecimiento digital. Siempre estoy en busca de aprender y perfeccionar mis habilidades, combinando creatividad y eficiencia para ofrecer resultados de alto impacto.",
+        description: "Hola, me llamo Angel. Soy un desarrollador full stack que se especializa en la construcción de soluciones web completas. Mi enfoque principal es el stack de Node, con el que abordo tanto el frontend como el backend. Trabajo con frameworks como NestJS y Django, y también utilizo Laravel cuando los proyectos lo requieren. Un componente clave de mi trabajo es el uso de Docker para la gestión de contenedores, y tengo conocimiento en la implementación de microservicios, trabajando con tecnologías como RabbitMQ y Grafana para asegurar la eficiencia y la escalabilidad de las aplicaciones.",
     },
     skills: {
         title: "Mis Habilidades",

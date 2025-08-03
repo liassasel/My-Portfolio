@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import Yo from '../src/assets/images/yop.jpg'
+import Yo from '../../src/assets/images/yop.jpg'
 
 type AboutProps = {
     t: {

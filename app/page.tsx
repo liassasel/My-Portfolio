@@ -1,14 +1,14 @@
 'use client'
 
+import About from '@/components/About'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
+import { translations } from '@/lib/translations'
 import { useState } from 'react'
-import Header from '../../components/Header'
-import Hero from '../../components/Hero'
-import About from '../../components/About'
-import Skills from '../../components/Skills'
-import Projects from '../../components/Projects'
-import Contact from '../../components/Contact'
-import Footer from '../../components/Footer'
-import { translations } from '../../lib/translations'
 
 export default function Home() {
   const [language, setLanguage] = useState<'en' | 'es'>('en')
