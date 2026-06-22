@@ -5,15 +5,20 @@ export type Translations = {
     hero: {
         title: string;
         subtitle: string;
+        tagline: string;
     };
     about: {
         title: string;
         description: string;
+        highlights: string[];
     };
     skills: {
         title: string;
-        items: string[];
+        categories: Array<{ name: string; items: string[] }>;
         description: string;
+    };
+    experience: {
+        title: string;
     };
     projects: {
         title: string;
@@ -22,6 +27,17 @@ export type Translations = {
     };
     contact: {
         title: string;
+        subtitle: string;
+        form: {
+        name: string;
+        email: string;
+        message: string;
+        placeholder: string;
+        send: string;
+        sending: string;
+        success: string;
+        error: string;
+        };
     };
     footer: {
         copyright: string;
