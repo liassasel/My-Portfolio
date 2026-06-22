@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image'
-import Yo from '../src/assets/images/yop.jpg'
+import Yo from '@/assets/images/yop.jpg'
 import SectionReveal from './ui/SectionReveal'
 import { useLanguage } from '../lib/LanguageContext'
 
