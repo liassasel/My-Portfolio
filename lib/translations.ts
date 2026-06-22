@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image'
 
-import { Language } from '../src/app/types'
+import { Language } from '@/app/types'
 
 import flutterLoginImage from '@/assets/images/flutter_login.png'
 import translateAppImage from '@/assets/images/translate_web.png'
