@@ -1,8 +1,9 @@
+'use client';
+
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Button } from '../components/ui/button'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card'
 
 interface ProjectCardProps {
     title: string
@@ -14,38 +15,34 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, imageUrl, projectUrl, viewProjectText }: ProjectCardProps) {
     return (
-    <motion.div
-        whileHover={{ scale: 1.05 }}
-        transition={{ duration: 0.3 }}
-    >
-        <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <CardHeader className="p-4">
-            <CardTitle className="text-xl font-bold text-gray-900 dark:text-white">{title}</CardTitle>
-            <CardDescription className="text-sm text-gray-600 dark:text-gray-300">{description}</CardDescription>
-        </CardHeader>
-        <CardContent className="p-0">
-            <div className="relative w-full h-48">
-            <Image
-                src={imageUrl}
-                alt={title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover' }}
-                className="transition-opacity duration-300 hover:opacity-75"
-            />
+        <motion.div
+            whileHover={{ y: -4 }}
+            transition={{ duration: 0.2 }}
+            className="group rounded-xl border border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+        >
+            <div className="relative w-full h-48 overflow-hidden bg-gray-100 dark:bg-neutral-800">
+                <Image
+                    src={imageUrl}
+                    alt={title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    style={{ objectFit: 'cover' }}
+                    placeholder="blur"
+                    className="transition-transform duration-300 group-hover:scale-105"
+                />
             </div>
-        </CardContent>
-        <CardFooter className="p-4 bg-gray-50 dark:bg-gray-900">
-            <Link href={projectUrl} passHref legacyBehavior>
-            <Button 
-                variant="outline" 
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white border-none transition-colors duration-300"
-            >
-                {viewProjectText}
-            </Button>
-            </Link>
-        </CardFooter>
-        </Card>
-    </motion.div>
+            <div className="p-5">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">{title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+                <Link href={projectUrl} passHref legacyBehavior>
+                    <Button
+                        variant="outline"
+                        className="w-full border-gray-300 dark:border-neutral-700 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-neutral-800"
+                    >
+                        {viewProjectText}
+                    </Button>
+                </Link>
+            </div>
+        </motion.div>
     )
 }
